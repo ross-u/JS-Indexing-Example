@@ -1,5 +1,7 @@
-// STEP 1 - find object without indexing
 console.log(users);
+
+// STEP 1 - find object without indexing
+/* 
 
 function findDocumentByIdWithoutIndex(collection, id, city) {
   for (let i = 0; i < collection.length; i++) {
@@ -15,9 +17,12 @@ var foundUser = findDocumentByIdWithoutIndex(users, 39999, "Los Angeles");
 
 console.timeEnd("Find user without index");
 
-console.log(foundUser);
+console.log(foundUser); 
+*/
 
+//
 // STEP 2 - Index the users by city name
+/* 
 function createIndex(data) {
   const index = {};
 
@@ -39,7 +44,11 @@ console.timeEnd("Index the users by city");
 
 // INDEXED USERS
 console.log(indexedUsers);
+ */
 
+//
+// STEP 3 - Find documents indexed by city
+/* 
 function findIndexedDocument(id, city) {
   for (let i = 0; i < indexedUsers[city].length; i++) {
     if (
@@ -55,4 +64,5 @@ console.time("Find indexed user");
 
 var foundUser2 = findDocumentByIdWithoutIndex(39999, "Los Angeles");
 
-console.timeEnd("Find indexed user");
+console.timeEnd("Find indexed user"); 
+*/
